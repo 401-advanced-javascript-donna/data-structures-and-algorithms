@@ -9,3 +9,4 @@ I decided to use a brute force approach to take a new, empty array, then loop th
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![](./assets/binary-search.png)
