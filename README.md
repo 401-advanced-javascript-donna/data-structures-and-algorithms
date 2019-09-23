@@ -9,3 +9,4 @@ I decided to use a brute force approach to take a new, empty array, then loop th
 
 ## Solution
 ![binary-search](/challenges/assets/binary-search.png)
+
