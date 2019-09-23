@@ -8,5 +8,5 @@ Write a function called insertShiftArray which takes in an array and the value t
 I set the array.length to arr.length -1, then interated over the array, shifting each position to -1, then inserted the new value at position 0.
 
 # Solution
-
+![array shift](/challenges/assets/array-shift.png)
 
