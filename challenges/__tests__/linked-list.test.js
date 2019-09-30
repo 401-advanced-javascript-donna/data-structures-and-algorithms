@@ -1,11 +1,6 @@
 let { LinkedList } = require('../linkedList/linked-list');
 
-const valOne = 1;
-const valTwo = 2;
-const valThree = 3;
-
 describe('Linked List', () => {
-  let linkedList;
 
   it('instantiate an empty linked list', () => {
     const linkedList = new LinkedList();
@@ -15,18 +10,32 @@ describe('Linked List', () => {
 
   it('insert at beginning of linked list', () => {
     const linkedList = new LinkedList();
-    linkedList.insert(valTwo);
-    expect(linkedList.head.data).toBe(valTwo);
+    linkedList.insert(1);
+    expect(linkedList.head.data).toBe(1);
   });
 
-  it.skip('return true when searching for a value within the linked list', () => {
-    expect(linkedList.includes(valOne)).toBe(true);
-    expect(linkedList.includes(valTwo)).toBe(true);
-    expect(linkedList.includes(valThree)).toBe(true);
+  it('return true if the linked list has a value', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(3);
+    linkedList.insert(2);
+    linkedList.insert(1);
+    expect(linkedList.includes(3)).toBe(true);
   });
 
-  it.skip('return true when searching for a value within the linked list', () => {
-    expect(linkedList.includes('non-existent-value')).toBe(false);
+  it('return false if the linked list does not have a value', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(3);
+    linkedList.insert(2);
+    linkedList.insert(1);
+    expect(linkedList.includes(4)).toBe(false);
+  });
+
+  it('returns a string of all the values in the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(3);
+    linkedList.insert(2);
+    linkedList.insert(1);
+    expect(linkedList.toString()).toBe('1, 2, 3');
   });
 
 });
