@@ -9,16 +9,20 @@ class Stack {
   constructor() {
     this.top = null;
   }
-}
 
-push(data) {
-  const node = new Node(data);
-  if(!this.top) {
-    this.top = Node;
-  } else {
-    node.next = this.top;
-    this.top = node;
+ 
+  push(data) {
+    const node = new Node(data);
+    if(!this.top) { this.top = node;
+    } else {
+      node.next = this.top;
+      this.top = node;
+    }
   }
+  
 }
 
-module.exports = { Node, Stack }
+module.exports = {
+  Node,
+  Stack,
+};
