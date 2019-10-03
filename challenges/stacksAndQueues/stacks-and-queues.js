@@ -33,7 +33,15 @@ class Stack {
   peek() {
     return this.top.data;
   }
-  
+    
+}
+
+class Queue {
+  constructor() {
+    this.front = null;
+  }
+
+
 }
 
 module.exports = {

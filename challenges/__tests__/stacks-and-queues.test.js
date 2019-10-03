@@ -45,4 +45,10 @@ describe('Stacks and Queues', () => {
     testStack.push('sir');
     expect(testStack.peek()).toBe('sir');
   });
+
+  it('can instantiate a new stack', () => {
+    const stack = new Stack();
+    expect(stack.top).toBe(null);
+    
+  });
 });
