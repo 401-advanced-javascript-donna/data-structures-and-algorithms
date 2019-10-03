@@ -25,4 +25,16 @@ describe('Stacks and Queues', () => {
     const result = stack.pop();
     expect(result).toBe('time');
   });
+
+  it('empties a stack after multiple pops', () => {
+    const stack = new Stack();
+    stack.push('once');
+    stack.push('upon');
+    stack.push('time');
+    stack.pop();
+    stack.pop();
+    stack.pop();
+    const result = stack.pop();
+    expect(result).toBe(null);
+  });
 });
