@@ -29,6 +29,10 @@ class Stack {
     else result = null;
     return result;
   }
+
+  peek() {
+    return this.top.data;
+  }
   
 }
 
