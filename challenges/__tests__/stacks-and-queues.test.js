@@ -16,4 +16,13 @@ describe('Stacks and Queues', () => {
     expect(testStack.top.next.data).toBe('upon');
     expect(testStack.top.next.next.data).toBe('once');
   });
+
+  it('pops a node off the top of a stack', () => {
+    const stack = new Stack();
+    stack.push('once');
+    stack.push('upon');
+    stack.push('time');
+    const result = stack.pop();
+    expect(result).toBe('time');
+  });
 });

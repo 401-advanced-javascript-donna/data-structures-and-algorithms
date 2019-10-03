@@ -19,6 +19,16 @@ class Stack {
       this.top = node;
     }
   }
+
+  pop() {
+    let result;
+    if(this.top) {
+      result = this.top.data;
+      this.top = this.top.next;
+    }
+    else result = null;
+    return result;
+  }
   
 }
 
