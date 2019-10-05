@@ -2,16 +2,24 @@ let { LinkedList } = require('../linkedList/linked-list');
 
 describe('Linked List', () => {
 
-  it('instantiate an empty linked list', () => {
+  it('Instantiate an empty linked list', () => {
     const linkedList = new LinkedList();
     expect(linkedList.head).toBeFalsy;
   });
 
 
-  it('insert at beginning of linked list', () => {
+  it('Insert into the linked list', () => {
     const linkedList = new LinkedList();
     linkedList.insert(1);
     expect(linkedList.head.data).toBe(1);
+  });
+
+  it('Head property will properly point to the first node in the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(4);
+    const result = { data: 4, next: null };
+    expect(linkedList.head).toEqual(result);
+
   });
 
   it('return true if the linked list has a value', () => {
@@ -39,3 +47,11 @@ describe('Linked List', () => {
   });
 
 });
+
+// Can successfully instantiate an empty linked list x
+// Can properly insert into the linked list x
+// The head property will properly point to the first node in the linked list
+// Can properly insert multiple nodes into the linked list
+// Will return true when finding a value within the linked list that exists
+// Will return false when searching for a value in the linked list that does not exist
+// Can properly return a collection of all the values that exist in the linked list
