@@ -73,4 +73,10 @@ describe('Stacks and Queues', () => {
     queue.dequeue();
     expect(queue.front.data).toBe('brillig');
   });
+
+  it('peek into a queue, seeing the expected value', () => {
+    const queue = new Queue();
+    queue.enqueue('jabberwocky');
+    expect(queue.front.data).toBe('jabberwocky');
+  });
 });
