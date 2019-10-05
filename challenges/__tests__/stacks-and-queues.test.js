@@ -65,4 +65,12 @@ describe('Stacks and Queues', () => {
     expect(queue.front.data).toBe('twas');
     expect(queue.front.next.data).toBe('brillig');
   });
+
+  it('Can successfully dequeue out of a queue the expected value', () => {
+    const queue = new Queue();
+    queue.enqueue('twas');
+    queue.enqueue('brillig');
+    queue.dequeue();
+    expect(queue.front.data).toBe('brillig');
+  });
 });

@@ -53,6 +53,18 @@ class Queue {
       currentNode.next = new Node(data);
     }
   }
+
+  dequeue() {
+    let currentNode = this.front;
+    let result;
+    if(!currentNode) {
+      return 'queue is empty';
+    } else {
+      result = currentNode.data;
+      this.front = currentNode.next;
+    }
+    return result;
+  }
 }
 
 
