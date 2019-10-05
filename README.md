@@ -6,4 +6,4 @@
 
 [Linked List](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/4)
 
-[Stacks and Queues]()
+[Stacks and Queues](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/5)
