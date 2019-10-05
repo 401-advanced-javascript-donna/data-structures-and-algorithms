@@ -88,4 +88,9 @@ describe('Stacks and Queues', () => {
     queue.dequeue();
     expect(queue.front).toBe(null);
   });
+
+  it('Instantiate an empty queue', () => {
+    const queue = new Queue();
+    expect(queue.front).toBe(null);
+  });
 });
