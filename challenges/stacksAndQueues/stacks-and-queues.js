@@ -10,11 +10,10 @@ class Stack {
     this.top = null;
   }
 
- 
   push(data) {
     const node = new Node(data);
-    if(!this.top) { this.top = node;
-    } else {
+    if(!this.top) this.top = node;
+    else {
       node.next = this.top;
       this.top = node;
     }
@@ -33,7 +32,6 @@ class Stack {
   peek() {
     return this.top.data;
   }
-    
 }
 
 class Queue {
@@ -41,10 +39,28 @@ class Queue {
     this.front = null;
   }
 
+  enqueue(data) {
+    let newNode = new Node(data);
+    let currentNode = this.front;
+    if(!currentNode) {
+      this.front = newNode;
+    }
+    else {
 
+      while(currentNode.next) {
+        currentNode = currentNode.next;
+      }
+      currentNode.next = new Node(data);
+    }
+  }
 }
+
+
+  
+
 
 module.exports = {
   Node,
   Stack,
+  Queue,
 };

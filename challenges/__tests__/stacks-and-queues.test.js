@@ -1,4 +1,4 @@
-const { Stack } = require('../../challenges/stacksAndQueues/stacks-and-queues');
+const { Node, Stack, Queue } = require('../../challenges/stacksAndQueues/stacks-and-queues');
 
 describe('Stacks and Queues', () => {
   it('pushes node to top of stack', () => {
@@ -50,5 +50,19 @@ describe('Stacks and Queues', () => {
     const stack = new Stack();
     expect(stack.top).toBe(null);
     
+  });
+
+  it('enqueues a new node into queue', () => {
+    const queue = new Queue();
+    queue.enqueue('twas');
+    expect(queue.front.data).toBe('twas');
+  });
+
+  it('Can successfully enqueue multiple into a queue', () => {
+    const queue = new Queue();
+    queue.enqueue('twas');
+    queue.enqueue('brillig');
+    expect(queue.front.data).toBe('twas');
+    expect(queue.front.next.data).toBe('brillig');
   });
 });
