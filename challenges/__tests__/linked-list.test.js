@@ -88,16 +88,28 @@ describe('Linked List', () => {
   it('Insert a node before the first node of a linked list', () => {
     const linkedList = new LinkedList();
     linkedList.insert(1);
+    linkedList.append(3);
     linkedList.insertBefore(1, 2);
-    expect(linkedList.size).toBe(2);
+    expect(linkedList.size).toBe(3);
     expect(linkedList.head.data).toBe(2);
   });
 
-});
+  it('Insert after a node in the middle of the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insertAfter(2, 3);
+    expect(linkedList.size).toBe(3);
+    expect(linkedList.head.next.data).toBe(3);
+  });
 
-// Can successfully add a node to the end of the linked list x
-// Can successfully add multiple nodes to the end of a linked list x
-// Can successfully insert a node before a node located i the middle of a linked list x
-// Can successfully insert a node before the first node of a linked list
-// Can successfully insert after a node in the middle of the linked list
-// Can successfully insert a node after the last node of the linked list
+  it('Insert a node after the last node of the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(0);
+    linkedList.insertAfter(1, 5);
+    expect(linkedList.size).toBe(3);
+    expect(linkedList.head.next.next.data).toBe(5);
+  });
+
+});

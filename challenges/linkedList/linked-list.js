@@ -60,6 +60,20 @@ class LinkedList {
     currentNode.next = node;
     this.size++;
   }
+
+  insertAfter(data, newData) {
+    const node = new Node(newData);
+    let currentNode = this.head;
+    if(this.head === null) {
+      this.head = node;
+    }
+    while(currentNode.data !== data) {
+      currentNode = currentNode.next;
+    }
+    node.next = currentNode.next;
+    currentNode.next = node;
+    this.size++;
+  }
 }
 
 module.exports = { LinkedList, Node };
