@@ -82,15 +82,22 @@ describe('Linked List', () => {
     linkedList.insert(2);
     linkedList.insertBefore(2, 3);
     expect(linkedList.size).toBe(3);
-    console.log(linkedList);
     expect(linkedList.head.next.data).toBe(3);
+  });
+
+  it('Insert a node before the first node of a linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insertBefore(1, 2);
+    expect(linkedList.size).toBe(2);
+    expect(linkedList.head.data).toBe(2);
   });
 
 });
 
 // Can successfully add a node to the end of the linked list x
 // Can successfully add multiple nodes to the end of a linked list x
-// Can successfully insert a node before a node located i the middle of a linked list
+// Can successfully insert a node before a node located i the middle of a linked list x
 // Can successfully insert a node before the first node of a linked list
 // Can successfully insert after a node in the middle of the linked list
 // Can successfully insert a node after the last node of the linked list
