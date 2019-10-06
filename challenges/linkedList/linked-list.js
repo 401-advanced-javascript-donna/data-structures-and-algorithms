@@ -85,6 +85,7 @@ class LinkedList {
       currentNode = currentNode.next;
       count++;
     }
+    return currentNode.data;
   }
 }
 

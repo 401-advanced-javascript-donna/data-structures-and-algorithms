@@ -144,12 +144,15 @@ describe('Linked List', () => {
     const linkedList = new LinkedList();
     linkedList.insert(9);
     expect(linkedList.kthFromEnd(9)).toBe('exception');
-    expect(linkedList.kthFromEnd(0)).toBe(undefined);
+    expect(linkedList.kthFromEnd(0)).toBe(9);
+  });
+
+  it('“Happy Path” where k is not at the end, but somewhere in the middle of the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    expect(linkedList.kthFromEnd(2)).toBe(2);
+    expect(linkedList.kthFromEnd(3)).toBe('exception');
   });
 });
-
-// Where k is greater than the length of the linked list x
-// Where k and the length of the list are the same x
-// Where k is not a positive integer x
-// Where the linked list is of a size 1 x
-// “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
