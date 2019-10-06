@@ -130,10 +130,19 @@ describe('Linked List', () => {
     const result = linkedList.kthFromEnd(k);
     expect(result).toBe('exception');
   });
+
+  it('Where k is not a positive integer', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(3);
+    linkedList.insert(2);
+    const k = -1;
+    const result = linkedList.kthFromEnd(k); 
+    expect(result).toBe('exception');
+  });
 });
 
 // Where k is greater than the length of the linked list x
-// Where k and the length of the list are the same
+// Where k and the length of the list are the same x
 // Where k is not a positive integer
 // Where the linked list is of a size 1
 // “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
