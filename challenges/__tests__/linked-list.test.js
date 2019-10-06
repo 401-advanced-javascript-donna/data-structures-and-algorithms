@@ -54,12 +54,22 @@ describe('Linked List', () => {
     expect(linkedList.head.data.toString()).toBe('three', 'two', 'one');
   });
 
+  it('Add a node to the end of the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    linkedList.insert(2);
+    linkedList.insert(3);
+    linkedList.append(4);
+    expect(linkedList.size).toBe(4);
+    expect(linkedList.head.next.next.next.data).toBe(4);
+
+  });
+
 });
 
-// Can successfully instantiate an empty linked list x
-// Can properly insert into the linked list x
-// The head property will properly point to the first node in the linked list x
-// Can properly insert multiple nodes into the linked list x
-// Will return true when finding a value within the linked list that exists x
-// Will return false when searching for a value in the linked list that does not exist x
-// Can properly return a collection of all the values that exist in the linked list
+// Can successfully add a node to the end of the linked list
+// Can successfully add multiple nodes to the end of a linked list
+// Can successfully insert a node before a node located i the middle of a linked list
+// Can successfully insert a node before the first node of a linked list
+// Can successfully insert after a node in the middle of the linked list
+// Can successfully insert a node after the last node of the linked list

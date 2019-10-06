@@ -29,6 +29,20 @@ class LinkedList {
     return false;
   }
 
+  append(data) {
+    const node = new Node(data);
+    if(this.head === null) {
+      this.head = node;
+    } else {
+      let currentNode = this.head;
+      while(currentNode.next) {
+        currentNode = currentNode.next;
+      }
+      currentNode.next = node;
+      this.size++;
+    }
+  }
+
 }
 
 module.exports = { LinkedList, Node };
