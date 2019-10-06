@@ -122,9 +122,17 @@ describe('Linked List', () => {
     expect(result).toBe('exception');
   });
 
+  it('Where k and the length of the list are the same', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(9);
+    linkedList.insert(8);
+    const k = 2; 
+    const result = linkedList.kthFromEnd(k);
+    expect(result).toBe('exception');
+  });
 });
 
-// Where k is greater than the length of the linked list
+// Where k is greater than the length of the linked list x
 // Where k and the length of the list are the same
 // Where k is not a positive integer
 // Where the linked list is of a size 1
