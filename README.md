@@ -12,4 +12,6 @@ Implement a Singly Linked List Data Structure
 
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![linked-list-one]()
+![linked-list-two]()
+![linked-list-three]()
