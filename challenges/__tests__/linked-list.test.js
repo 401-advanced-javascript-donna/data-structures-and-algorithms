@@ -54,6 +54,14 @@ describe('Linked List', () => {
     expect(linkedList.head.data.toString()).toBe('three', 'two', 'one');
   });
 
+  it('returns a string of all the values in the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(3);
+    linkedList.insert(2);
+    linkedList.insert(1);
+    expect(linkedList.toString()).toBe('1, 2, 3');
+  });
+
 });
 
 // Can successfully instantiate an empty linked list x
