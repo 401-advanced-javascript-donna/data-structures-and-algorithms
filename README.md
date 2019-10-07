@@ -1,11 +1,15 @@
-# Reverse an Array
-Create a function to reverse an array.
+# Lab 05: Linked Lists
+Implement a Singly Linked List Data Structure
 
 ## Challenge
-The challenge to to create a function that reverses a given array, without using any built-in array methods.
+- [x] Can successfully instantiate an empty linked list
+- [x] Can properly insert into the linked list
+- [x] The head property will properly point to the first node in the linked list
+- [x] Can properly insert multiple nodes into the linked list
+- [x] Will return true when finding a value within the linked list that exists
+- [x] Will return false when searching for a value in the linked list that does not exist
+- [x] Can properly return a collection of all the values that exist in the linked list
 
-## Approach & Efficiency
-I decided to use a brute force approach to take a new, empty array, then loop through the given array, and finally copy the iterated array into the new array in reverse order. I did some looking at recurison and think that may be a more efficient approach, but I haven't quite worked out how to solve using recursion.
 
 ## Solution
 <!-- Embedded whiteboard image -->
