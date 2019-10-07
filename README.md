@@ -1,11 +1,5 @@
-# Reverse an Array
-Create a function to reverse an array.
+# Code Challenge: Class 08
+Merge two linked lists
 
 ## Challenge
-The challenge to to create a function that reverses a given array, without using any built-in array methods.
-
-## Approach & Efficiency
-I decided to use a brute force approach to take a new, empty array, then loop through the given array, and finally copy the iterated array into the new array in reverse order. I did some looking at recurison and think that may be a more efficient approach, but I haven't quite worked out how to solve using recursion.
-
-## Solution
-<!-- Embedded whiteboard image -->
+Write a function called `mergeLists` which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
