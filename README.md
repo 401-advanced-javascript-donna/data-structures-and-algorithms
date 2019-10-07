@@ -1,5 +1,5 @@
 # Code Challenge: Class 10: Stack and a Queue Implementation
-Create a function to reverse an array.
+Implement a Stack and a Queue Data Structure
 
 ## Challenge
 * Create a `Node` class that has properties for the value stored in the Node, and a pointer to the next node.
