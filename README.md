@@ -12,6 +12,8 @@ Implement a Singly Linked List Data Structure
 
 
 ## Solution
-![linked-list-one]()
-![linked-list-two]()
-![linked-list-three]()
+![linked-list-one](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/blob/linked-list/challenges/assets/LL1.png)
+
+![linked-list-two](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/blob/linked-list/challenges/assets/LL2.png)
+
+![linked-list-three](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/blob/linked-list/challenges/assets/LL3.png)
