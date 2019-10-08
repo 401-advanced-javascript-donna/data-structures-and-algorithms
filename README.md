@@ -1,5 +1,5 @@
 # Linked List Kth from the End
-Create a function to reverse an array.
+k-th value from the end of a linked list
 
 ## Challenge
 - [x] Where k is greater than the length of the linked list
