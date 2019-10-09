@@ -1,11 +1,9 @@
-# Reverse an Array
-Create a function to reverse an array.
+# Queue with Stacks
+Implement a Queue using two Stacks.
 
 ## Challenge
-The challenge to to create a function that reverses a given array, without using any built-in array methods.
+Create a brand new `PseudoQueue` class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 `Stack` objects. Ensure that you create your class with the following methods:
 
-## Approach & Efficiency
-I decided to use a brute force approach to take a new, empty array, then loop through the given array, and finally copy the iterated array into the new array in reverse order. I did some looking at recurison and think that may be a more efficient approach, but I haven't quite worked out how to solve using recursion.
-
-## Solution
-<!-- Embedded whiteboard image -->
+* `enqueue(value)` which inserts `value` into the PseudoQueue, using a first-in, first-out approach.
+* `dequeue()` which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+The `Stack` instances have only `push`, `pop`, and `peek` methods. You should use your own Stack implementation. Instantiate these Stack objects in your PseudoQueue constructor.
