@@ -1,11 +1,6 @@
-# Reverse an Array
-Create a function to reverse an array.
-
+# First-in, First out Animal Shelter.
 ## Challenge
-The challenge to to create a function that reverses a given array, without using any built-in array methods.
-
-## Approach & Efficiency
-I decided to use a brute force approach to take a new, empty array, then loop through the given array, and finally copy the iterated array into the new array in reverse order. I did some looking at recurison and think that may be a more efficient approach, but I haven't quite worked out how to solve using recursion.
-
-## Solution
-<!-- Embedded whiteboard image -->
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a _first-in_, _first-out_ approach.
+Implement the following methods:
+* `enqueue(animal)`: adds `animal` to the shelter. `animal` can be either a dog or a cat object.
+* `dequeue(pref)`: returns either a dog or a cat. If `pref` is not `"dog"` or `"cat"` then return null.
