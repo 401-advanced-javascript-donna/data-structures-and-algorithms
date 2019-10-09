@@ -13,3 +13,7 @@
 * [LL Merged](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/8)
 
 * [Stacks and Queues](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/5)
+
+* [Queue with Stacks](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/9)
+
+* [FIFO Animal Shelter](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/10)
