@@ -1,11 +1,9 @@
-# Reverse an Array
-Create a function to reverse an array.
+# Linked List Kth from the End
+k-th value from the end of a linked list
 
 ## Challenge
-The challenge to to create a function that reverses a given array, without using any built-in array methods.
-
-## Approach & Efficiency
-I decided to use a brute force approach to take a new, empty array, then loop through the given array, and finally copy the iterated array into the new array in reverse order. I did some looking at recurison and think that may be a more efficient approach, but I haven't quite worked out how to solve using recursion.
-
-## Solution
-<!-- Embedded whiteboard image -->
+- [x] Where k is greater than the length of the linked list
+- [x] Where k and the length of the list are the same
+- [x] Where k is not a positive integer
+- [x] Where the linked list is of a size 1
+- [x] “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
