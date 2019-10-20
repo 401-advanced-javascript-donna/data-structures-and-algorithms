@@ -1,19 +1,8 @@
-* [Array Reverse](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/1)
+# Multi-bracket Validation
+## Challenge
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
 
-* [Array Shift](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/2)
+* Round Brackets : `()`
+* Square Brackets : `[]`
+* Curly Brackets : `{}`
 
-* [Array Binary Search](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/3)
-
-* [Linked List](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/4)
-
-* [LL Insertions](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/6)
-
-* [LL Kth from End](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/7)
-
-* [LL Merged](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/8)
-
-* [Stacks and Queues](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/5)
-
-* [Queue with Stacks](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/9)
-
-* [FIFO Animal Shelter](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/10)
