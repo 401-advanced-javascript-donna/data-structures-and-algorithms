@@ -66,7 +66,7 @@ class BinaryTree {
       if(node.left) traverse(node.left);
       // if right child exists, go right again
       if(node.right) traverse(node.right);
-    }
+    };
     traverse(this.root);
 
     return result;
