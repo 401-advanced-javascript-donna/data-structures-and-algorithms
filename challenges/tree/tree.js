@@ -6,37 +6,35 @@ class Node {
   }
 }
 
-class BinaryTree {
+class BinarySearchTree {
   constructor(value) {
     this.root = new Node(value);
-    this.count = 1;
   }
 
-  size() {
-    return this.count;
-  }
 
   add(value) {
-    this.count ++;
-
     let newNode = new Node(value);
 
+    // recursive function to search tree
     const searchTree = node => {
-      // 
       if(value < node.value) {
         if(!node.left) {
           node.left = newNode;
-        } else {
-          searchTree.left;
+        } 
+        else {
+          searchTree(node.left);
         }
-      } else if(value > node.value) {
+      }
+      else if(value > node.value) {
         if(!node.right) {
           node.right = newNode;
-        } else {
+        }
+        else {
           searchTree(node.right);
         }
       }
     };
+
     searchTree(this.root);
   }
 
@@ -56,56 +54,59 @@ class BinaryTree {
     return false;
   }
 
-  preOrder() {
-    let result = [];
+  // Depth First Search
 
-    const traverse = node => {
-      // capture root node value
-      result.push(node.value);
-      // if child exists, go left again
-      if(node.left) traverse(node.left);
-      // if right child exists, go right again
-      if(node.right) traverse(node.right);
-    };
-    traverse(this.root);
-
-    return result;
-  }
+  // in order
+  // left, root, right
+  // 1, 3, 16, 32, 45
 
   inOrder() {
     let result = [];
 
+    // recursive function to traverse tree
     const traverse = node => {
-      // if child exists, go left again
-      if(node.left) traverse(node.left);
-      // capture root node value
-      result.push(node.value);
-      // if child exists, go right again
-      if(node.right) traverse(node.right);
+      if(node.left) traverse(node.left); // if left child exists, go left again
+      result.push(node.value); // capture root node value
+      if(node.right) traverse(node.right); // if right child exists, go right again
     };
     traverse(this.root);
-
     return result;
   }
 
-  postOrder() {
+  // pre-order
+  // root, left, right
+  // 16, 3, 1, 32, 45
+  preOrder() {
     let result = [];
-
+     // recursive function to traverse tree
     const traverse = node => {
-      // if child exists, go left again
-      if(node.left) traverse(node.left);
-      // if child exists, go right again
-      if(node.right) traverse(node.right);
-      // capture root node value
-      result.push(node.value);
+      result.push(node.value); // capture root node value
+      if(node.left) traverse(node.left); // if left child exists, go left again
+      if(node.right) traverse(node.right); // if right child exists, go right again
     };
     traverse(this.root);
+    return result;
+  }
 
+  // post order
+  // left, right, root
+  // 1, 3, 32, 45, 16
+
+  postOrder() {
+    let result = [];
+      // recursive function to traverse tree
+    const traverse = node => {
+      if(node.left) traverse(node.left); // if left child exists, go left again
+      if(node.right) traverse(node.right); // if right child exists, go right again
+      result.push(node.value); // capture root node value
+    };
+    traverse(this.root);
     return result;
   }
 
 }
 
 module.exports = {
-  BinaryTree
+  Node,
+  BinarySearchTree
 };
