@@ -8,5 +8,5 @@ Without utilizing any of the built-in methods available to your language, determ
 
 Return the tree with its new values.
 
-## Aproach
+## Approach
 I used the existing BST, then created a function using the modulo to check for values divisible by 3, 5, or 3 & 5, and replaced the value with "Fizz", "Buzz", or "FizzBuzz" accordingly.
