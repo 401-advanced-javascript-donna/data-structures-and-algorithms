@@ -36,6 +36,7 @@ describe('Tree Class', () => {
   });
 
   it('should should return the bst in post order from left, right, root ', () => {
+    // eslint-disable-next-line array-bracket-spacing
     expect(bst.postOrder()).toEqual([ 1, 3, 32, 45, 16 ]);
   });
 });
