@@ -1,4 +1,4 @@
-const { Node, BinarySearchTree } = require('../tree/tree');
+const { BinarySearchTree } = require('../tree/tree');
 
 describe('Tree Class', () => {
   it('should create an empty tree', () => {
