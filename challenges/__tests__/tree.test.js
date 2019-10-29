@@ -1,4 +1,4 @@
-const { BinarySearchTree } = require('../tree/tree');
+const { Node, BinarySearchTree } = require('../tree/tree');
 
 describe('Tree Class', () => {
   it('should create an empty tree', () => {
@@ -38,5 +38,13 @@ describe('Tree Class', () => {
   it('should should return the bst in post order from left, right, root ', () => {
     // eslint-disable-next-line array-bracket-spacing
     expect(bst.postOrder()).toEqual([ 1, 3, 32, 45, 16 ]);
+  });
+
+  it('should search tree breadth first', () => {
+    const tree = new BinarySearchTree;
+    tree.root = new Node(2);
+    tree.root.left = new Node(7);
+    tree.root.left.left = new Node(2);
+    tree.root.left.right = new Node(6);
   });
 });

@@ -104,7 +104,25 @@ class BinarySearchTree {
     return result;
   }
 
+  // Use a queue
+  // 2, 7, 5, 2, 6, 9, 5, 11, 4
+  breadthFirst() {
+    let result = [];
+    let queue = [];
+  
+    queue.push(this.root);
+  
+    while(queue.length) {
+      let currentNode = queue.shift();
+      result.push(currentNode.value);
+  
+      if(currentNode.left) queue.push(currentNode.left);
+      if(currentNode.right) queue.push(currentNode.right);
+    }
+    return result;
+  }
 }
+
 
 module.exports = {
   Node,
