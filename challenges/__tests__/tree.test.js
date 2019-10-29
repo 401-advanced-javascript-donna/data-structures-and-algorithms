@@ -39,4 +39,8 @@ describe('Tree Class', () => {
     // eslint-disable-next-line array-bracket-spacing
     expect(bst.postOrder()).toEqual([ 1, 3, 32, 45, 16 ]);
   });
+
+  it('should return the bst in breadth-first order', () => {
+    expect(bst.bfs()).toEqual([16, 3, 45, 1, 32]);
+  });
 });
