@@ -1,21 +1,6 @@
-* [Array Reverse](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/1)
+# Breadth-first
+## Challenge
+Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
 
-* [Array Shift](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/2)
-
-* [Array Binary Search](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/3)
-
-* [Linked List](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/4)
-
-* [LL Insertions](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/6)
-
-* [LL Kth from End](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/7)
-
-* [LL Merged](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/8)
-
-* [Stacks and Queues](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/5)
-
-* [Queue with Stacks](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/9)
-
-* [FIFO Animal Shelter](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/10)
-
-* [Multi-Bracket Validation](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/11)
+## Approach
+Used a queue to traverse breadth-first search
