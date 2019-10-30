@@ -6,6 +6,6 @@ In short, merge sort divides an array into equal halves, then recombines them in
 
 ### Steps:
 1. If there is only one element in the list, it is, by default, already sorted, and can be returned
-1. If there is more than one element in the list, recursively divide into two halves until it can no longer be divided
+1. If there is more than one element in the list, recursively divide the list into two halves until it can no longer be divided
 1. Merge the smaller lists into a new list in sorted order
 
