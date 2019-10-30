@@ -2,7 +2,7 @@
 ## Challenge and Approach
 Merge sort is a divide and conquer sort algorithm. When considering O(n log n), it is considered a well respected algorithm. 
 
-Merge sort for divides an array into equal halves, then recombines them into sorted order.
+In short, merge sort divides an array into equal halves, then recombines them into sorted order.
 
 ### Steps:
 1. If there is only one element in the list, it is, by default, already sorted, and can be returned
