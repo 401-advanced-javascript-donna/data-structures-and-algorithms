@@ -1,6 +1,11 @@
 # Merge Sort Algorithm
-## Challenge
-Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a _first-in_, _first-out_ approach.
-Implement the following methods:
-* `enqueue(animal)`: adds `animal` to the shelter. `animal` can be either a dog or a cat object.
-* `dequeue(pref)`: returns either a dog or a cat. If `pref` is not `"dog"` or `"cat"` then return null.
+## Challenge and Approach
+Merge sort is a divide and conquer sort algorithm. When considering O(n log n), it is considered a well respected algorithm. 
+
+Merge sort for divides an array into equal halves, then recombines them into sorted order.
+
+### Steps:
+1. If there is only one element in the list, it is, by default, already sorted, and can be returned
+1. If there is more than one element in the list, recursively divide into two halves until it can no longer be divided
+1. Merge the smaller lists into a new list in sorted order
+
