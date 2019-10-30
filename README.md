@@ -1,4 +1,4 @@
-# First-in, First out Animal Shelter.
+# Merge Sort Algorithm
 ## Challenge
 Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a _first-in_, _first-out_ approach.
 Implement the following methods:
