@@ -1,21 +1,11 @@
-* [Array Reverse](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/1)
+# Merge Sort Algorithm
+## Challenge and Approach
+Merge sort is a divide and conquer sort algorithm. When considering O(n log n), it is considered a well respected algorithm. 
 
-* [Array Shift](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/2)
+In short, merge sort divides an array into equal halves, then recombines them into sorted order.
 
-* [Array Binary Search](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/3)
+### Steps:
+1. If there is only one element in the list, it is, by default, already sorted, and can be returned
+1. If there is more than one element in the list, recursively divide the list into two halves until it can no longer be divided
+1. Merge the smaller lists into a new list in sorted order
 
-* [Linked List](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/4)
-
-* [LL Insertions](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/6)
-
-* [LL Kth from End](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/7)
-
-* [LL Merged](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/8)
-
-* [Stacks and Queues](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/5)
-
-* [Queue with Stacks](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/9)
-
-* [FIFO Animal Shelter](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/10)
-
-* [Multi-Bracket Validation](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/11)
