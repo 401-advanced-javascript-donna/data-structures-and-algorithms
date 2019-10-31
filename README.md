@@ -1,21 +1,3 @@
-* [Array Reverse](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/1)
-
-* [Array Shift](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/2)
-
-* [Array Binary Search](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/3)
-
-* [Linked List](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/4)
-
-* [LL Insertions](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/6)
-
-* [LL Kth from End](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/7)
-
-* [LL Merged](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/8)
-
-* [Stacks and Queues](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/5)
-
-* [Queue with Stacks](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/9)
-
-* [FIFO Animal Shelter](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/10)
-
-* [Multi-Bracket Validation](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/11)
+# Quick Sort
+## Challenge
+Complete a working, tested implementation of Quick Sort, based on the pseudo code provided
