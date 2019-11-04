@@ -1,6 +1,9 @@
-# First-in, First out Animal Shelter.
+# Hash Table
+
 ## Challenge
-Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a _first-in_, _first-out_ approach.
-Implement the following methods:
-* `enqueue(animal)`: adds `animal` to the shelter. `animal` can be either a dog or a cat object.
-* `dequeue(pref)`: returns either a dog or a cat. If `pref` is not `"dog"` or `"cat"` then return null.
+Implement a Hashtable with the following methods:
+
+1. ` add `: takes in both the key and value. This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
+1. ` get `: takes in the key and returns the value from the table.
+1. ` contains `: takes in the key and returns a boolean, indicating if the key exists in the table already.
+1. ` hash `: takes in an arbitrary key and returns an index in the collection..
