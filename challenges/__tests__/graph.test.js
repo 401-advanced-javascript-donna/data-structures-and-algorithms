@@ -1,17 +1,42 @@
 const Graph = require('../graph/graph');
 
 describe('Graphs', () => {
-  const graph = new Graph();
   it('should add node to graph', () => {
-    graph.addNode(1);
-    expect(graph.nodeList.has(1)).toBeTruthy();
+    const graph = new Graph();
+    graph.addNode('a');
+    expect(graph.nodeList.has('a')).toBeTruthy();
   });
 
   it('should add an edge to the graph', () => {
+    const graph = new Graph();
     graph.addNode('a');
     graph.addNode('b');
-    graph.addEdge('a', 'b', 4);
-    expect(graph.nodeList.get('a')).toEqual([{ b: 4 }]);
-    expect(graph.nodeList.get('b')).toEqual([{ a: 4 }]);
+    graph.addEdge('a', 'b', 'z');
+    expect(graph.nodeList.get('a')).toEqual([{ b: 'z' }]);
+    expect(graph.nodeList.get('b')).toEqual([{ a: 'z' }]);
+  });
+
+  it('should get all nodes in the graph', () => {
+    const graph = new Graph();
+    graph.addNode('a');
+    graph.addNode('b');
+    graph.addNode('z');
+    expect(graph.getNodes()).toEqual(['a', 'b', 'z']);
+  });
+
+  it('should get neigbors', () => {
+    const graph = new Graph();
+    graph.addNode('a');
+    graph.addNode('b');
+    graph.addEdge('a', 'b', 'z');
+    expect(graph.getNeighbors('a')).toEqual([{ b: 'z' }]);
+  });
+
+  it('should get size of graph', () => {
+    const graph = new Graph();
+    graph.addNode('a');
+    graph.addNode('b');
+    graph.addNode('z');
+    expect(graph.size()).toBe(3);
   });
 });

@@ -9,7 +9,6 @@ class Graph {
   }
 
   addEdge(node1, node2, weight) {
-    console.log(node1);
     this.nodeList.get(node1).push({ [node2]: weight });
     this.nodeList.get(node2).push({ [node1]: weight });
   }
