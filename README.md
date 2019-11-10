@@ -1,6 +1,21 @@
-# First-in, First out Animal Shelter.
+# Graph Implementation
 ## Challenge
-Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a _first-in_, _first-out_ approach.
-Implement the following methods:
-* `enqueue(animal)`: adds `animal` to the shelter. `animal` can be either a dog or a cat object.
-* `dequeue(pref)`: returns either a dog or a cat. If `pref` is not `"dog"` or `"cat"` then return null.
+Implement your own Graph. The graph should be represented as an adjacency list, and should include the following methods:
+
+1. AddNode()
+* Adds a new node to the graph
+* Takes in the value of that node
+* Returns the added node
+1. AddEdge()
+* Adds a new edge between two nodes in the graph
+* Include the ability to have a “weight”
+* Takes in the two nodes to be connected by the edge
+* Both nodes should already be in the Graph
+1. GetNodes()
+* Returns all of the nodes in the graph as a collection (set, list, or similar)
+1. GetNeighbors()
+* Returns a collection of nodes connected to the given node
+* Takes in a given node
+* Include the weight of the connection in the returned collection
+1. Size()
+* Returns the total number of nodes in the graph
