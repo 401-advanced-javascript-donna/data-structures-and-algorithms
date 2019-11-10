@@ -1,21 +1,21 @@
-* [Array Reverse](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/1)
+# Graph Implementation
+## Challenge
+Implement your own Graph. The graph should be represented as an adjacency list, and should include the following methods:
 
-* [Array Shift](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/2)
-
-* [Array Binary Search](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/3)
-
-* [Linked List](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/4)
-
-* [LL Insertions](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/6)
-
-* [LL Kth from End](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/7)
-
-* [LL Merged](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/8)
-
-* [Stacks and Queues](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/5)
-
-* [Queue with Stacks](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/9)
-
-* [FIFO Animal Shelter](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/10)
-
-* [Multi-Bracket Validation](https://github.com/401-advanced-javascript-donna/data-structures-and-algorithms/pull/11)
+1. AddNode()
+     * Adds a new node to the graph
+     * Takes in the value of that node
+     * Returns the added node
+2. AddEdge()
+     * Adds a new edge between two nodes in the graph
+     * Include the ability to have a “weight”
+     * Takes in the two nodes to be connected by the edge
+     * Both nodes should already be in the Graph
+3. GetNodes()
+     * Returns all of the nodes in the graph as a collection (set, list, or similar)
+4. GetNeighbors()
+     * Returns a collection of nodes connected to the given node
+     * Takes in a given node
+     * Include the weight of the connection in the returned collection
+5. Size()
+     * Returns the total number of nodes in the graph
